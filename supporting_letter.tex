@@ -1,0 +1,85 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.81]{geometry}
+\usepackage{ragged2e}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Scott}{Morgan}
+\title{Supporting Letter}                               % optional, remove / comment the line if not wanted
+%\address{51 Gregory Close, Pencoed, Bridgend, CF35 6RF}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+%\phone[mobile]{+44 7725 131355}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{01234 123456}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{MorganSN@cardiff.ac.uk}                               % optional, remove / comment the line if not wanted
+\homepage{scott3142.com}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{A dedicated and committed individual with a strong passion for education, teaching and learning.}                                 % optional, remove / comment the line if not wanted
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{Name}{Address \\ Postcode}
+\date{Date}
+\opening{\textbf{Application for position:} Position Title \\ \vspace{5mm} Dear $\ldots$}
+\closing{Yours sincerely,}
+%\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+
+\makelettertitle
+\justify
+\vspace{-6mm}
+I would like to apply for the above position, and hope to demonstrate my suitability for the role. My interests are aligned with the goal of this project, and my experiences in \textbf{mathematics} and \textbf{computational modelling} will allow me to contribute substantially to the work.
+
+My PhD project has been concerned with \textbf{fluid mechanics} and in particular with \textbf{transition to turbulence} in periodically modulated boundary layers. Motivated by \textbf{laminar flow control techniques} on swept wings, I have studied the evolution of disturbances in the boundary layer formed above a rotating disk and developed a \textbf{computational suite of software} in MATLAB for solving the arising \textbf{nonlinear eigenvalue problems} in a novel way. Additionally, I have developed software for numerically simulating the three-dimensional boundary layer in Fortran and more recently Python, in tandem with a more mathematically fundamental study involving \textbf{Floquet theory}. My main result is to have shown that even a \textbf{small amount of modulation} in the rotation rate of the disk can have a \textbf{significant dampening effect} on disturbance evolution in the boundary layer, thereby \textbf{delaying turbulent onset}. Due to the close relationship between the flows over a rotating disk and a swept wing, the significant reduction in the growth rates of a disturbance shown by my computational experiments has \textbf{significant applications to the aerospace industry}. I have two papers in draft and another to follow, one focused on the computational aspect of the work and two towards the main results for fluid mechanics. 
+
+More recently, I have developed \textbf{interdisciplinary ties}, independently of my supervisor, with a research group studying fundamental techniques in \textbf{electrochemistry}. Several researchers both in the UK and Singapore have shown great interest in the chemical engineering applications of my work and have expressed a desire to work collaboratively in the future to iteratively develop mathematical and computational methods from experimental data.
+
+Further highlighting my interdisciplinary skills and ability to learn quickly, I have recently developed an \textbf{engagement project} aimed at A-Level students which combines chemistry, mathematics, data analysis and engineering. In collaboration with the University of Hertfordshire, this project consists of a \textbf{functional spectrophotometer}, and using Lego and a Raspberry Pi we have produced results comparable to a real laboratory device for a fraction of the cost. This project has received substantial interest from several schools and universities who are interested in working collaboratively to combine the two fields of science and I have been successful in securing grant funding from the London Mathematical Society to further develop the idea.
+
+The work conducted during my PhD has been widely received and is regarded as having substantial impact by many academics across the world. I have presented my research at several major events, including four international conferences; two prestigious annual meetings of the Society for Industrial and Applied Mathematics, an ERCOFTAC special interest group meeting in Siena and the SIAM National Student Chapter Conference in Galway. In addition to these, I have presented at many national conferences, including the industry focused DiPaRT organised by Airbus. For many of these conferences, I applied for and was successful in \textbf{obtaining competitive travel award funding}, showcasing my ability to market my research to a wide community.
+
+During my PhD, I have developed a substantial network of contacts, both within the UK and internationally, and within academia and industry. I am a \textbf{founding member of the UK Fluids Network special interest group on boundary layers and complex rotating flows}, and as a result of this program have initiated links between myself and my PhD supervisor Dr. Chris Davies (Cardiff), Prof. Stephen Garrett (Leicester), Prof. Peter Thomas (Warwick) and Dr. Paul Griffiths (Coventry), all of whom I have a working collaborative partnership with. I have recently been awarded a \textbf{competitive £600 grant from the UK Fluids Network} for several short research visits to develop these collaborative ties further. Additionally, through conference meetings both nationally and internationally, I have developed a range of international collaborators, most notably Drs. Ellinor Appelquist and Antonio Segalini (KTH, Stockholm) and Dr. Christian Thomas (Monash University, Melbourne).
+
+My leadership qualities are showcased by several positions I have held during my PhD, most notably my \textbf{Presidency of the Cardiff University SIAM-IMA Student Chapter}, for which I received an award for \textbf{Outstanding Contributions to SIAM}. Through this post, I developed the chapter from a small group with two members to a large, recognised group within the mathematics department at Cardiff and oversaw a merger with the IMA after receiving grant funding. During my tenure, I applied for and was successful in \textbf{obtaining over £2000 from various organisations} including SIAM and the IMA, and organised several events including a \textbf{national conference attended by over 50 people}. One of the highlights of my post was the organisation of a series of \textbf{public engagement workshops} aimed at increasing attainment and University applications in schools in low socio-economic regions. This event was attended by over 80 FE College and secondary school students and staff, and was \textbf{published in an article in Mathematics Today.}
+
+I have extensive teaching experience, at both undergraduate and FE college level, and have organised and run several classes, workshops and seminars during my time at university. I have recently delivered a second year undergraduate course in \textbf{Elementary Fluid Dynamics}, and achieved \textbf{96\% overall module satisfaction}. This has given me an invaluable insight into academic life after the PhD, and has piqued my interest in continuing this career track. Moreover, after noticing a lack of computer programming education in the undergraduate mathematics degree at Cardiff, I \textbf{developed a course entitled 'An Introduction to Matlab'} which I have successfully delivered for the past two years, again receiving \textbf{highly positive feedback}. I addition to this teaching at undergraduate level I have an array of other experience, including the development and delivery of three computing courses at BTEC Level 2-4 in Bridgend College. I was responsible for units in \textbf{automated systems} and \textbf{website design} and developed the course notes and schemes of work from scratch. In addition to this, I am a \textbf{Raspberry Pi Certified Educator}, a \textbf{STEM engagement officer} at Cardiff University and a tutor for the \textbf{Brilliant Club Scholars Programme}, all of which have contributed to the development of my strong interpersonal skills, which have proven invaluable as I continue to disseminate my research on the world stage.
+
+In conclusion, I believe that I fit the criteria for this opportunity. The results obtained during my PhD have evidenced that I am a talented researcher with a comprehensive background in mathematics and fluid dynamics. My interdisciplinary skills and research leadership qualities are shown by my ability to organise highly commended national events and my extensive teaching experience. Finally, I believe that my experiences during the PhD have enabled me to develop substantially both as a person and a researcher, and I would therefore be delighted to be invited for interview. \newline
+
+\makeletterclosing
+
+\end{document}
+
+%% end of file `template.tex'.
